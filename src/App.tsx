@@ -20,6 +20,7 @@ import {
   MessageCircle,
   Languages
 } from "lucide-react";
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import MortgageCalculator from "./components/MortgageCalculator";
 import { useLanguage } from "./LanguageContext";
 
@@ -467,7 +468,7 @@ export default function App() {
               <li className="flex items-center gap-2"><Phone className="w-4 h-4" /> +420 777 123 456</li>
               <li className="flex items-center gap-2"><Mail className="w-4 h-4" /> ludmila@alexejenko.cz</li>
               <li className="flex items-center gap-2"><MapPin className="w-4 h-4" /> U nádraží 827/4, 415 01 Teplice</li>
-              <li className="flex items-center gap-2 opacity-60"><Globe className="w-4 h-4" /> {language === 'ru' ? 'Прага, Чешская республика' : language === 'en' ? 'Prague, Czech Republic' : 'Praha, Česká republika'}</li>
+              <li className="flex items-center gap-2 opacity-60"><Globe className="w-4 h-4" /> {language === 'ru' ? 'Прага, Чешс��ая республика' : language === 'en' ? 'Prague, Czech Republic' : 'Praha, Česká republika'}</li>
             </ul>
           </div>
         </div>
@@ -483,6 +484,7 @@ export default function App() {
           </div>
         </div>
       </footer>
+      <SpeedInsights />
     </div>
   );
 }
